@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<title>Formulario</title>
+
+<body>
+    <form action="Formulario/envio.php" method="POST">
+        <table border="0">
+
+        <tr>
+            <!--linha do nome-->
+        <td width = "10%"> <label> Nome: </td>
+            <!--para setar campos obrigatorios "required = "required"". -->
+        <td> <input type="text" name="nome" placeholder="digite seu nome" required="required"></label> </td> 
+        </tr>
+
+            <!--linha do email-->
+        <tr>
+        <td> <label> Email: </td>
+            <td> <input type="text" name="email" placeholder="digite seu email" required="required"></label> </td>
+        </tr>
+        
+            <!--linha cep-->
+        <tr>
+            <td> <label> Cep: </td>
+            <td> <input type="number" name="cep" placeholder="ensira seu cep" required="required"></label> </td>
+        </tr>
+
+        <!--linha data de nascimento-->
+        <tr>
+            <td> <label>Data de nascimento: </td>
+            <td> <input type="date" name="date" required="required"></label> </td>
+        </tr>
+
+        <!--linha senha-->
+        <tr>
+            <td> <label> Senha: </td>
+            <td> <input type="password" name="senha" placeholder="digite sua senha" required="required"></label> </td>
+        </tr>
+
+        <!--linha confirmar senha-->
+        <tr>
+            <td> <label>Confirme sua Senha: </td>
+            <td> <input type="password" name="senha" placeholder="digite novamente" required="required"></label> </td>
+        </tr>
+
+        <!--linha documentos-->
+        <tr>
+            <td> <label> Documentos: </label> </td>
+            <td> CNPJ: <input type="radio" nome="cnpj" required="required"> - CPF: <input type="radio" name="cpf"> </td>
+        </tr>
+
+        <!--linha parentes-->
+        <tr>
+            <td> <label>Parente:</label></td>
+            <td> Filho: <input type="checkbox" nome ="filho" required="required"> -Tio: <input type="checkbox" nome ="tio" required="required"></td>
+        </tr>
+        
+        <!--area de texto-->
+        <tr>
+            <td> <label>Deixe seu feedback: </label> </td>
+            <td> <textarea name="area de texto" cols="30" rows="5" placeholder="Deixe uma mensagem" ></textarea> </td>
+        </tr>
+
+        <!--linha botoes-->
+        <tr>
+            <td> <input type="submit" name = "enviar" value="Enviar"> </td>
+            <td> <input type="reset" name="reset" value="Limpar dados"> </td>
+        </tr>
+
+        <!--caixa de seleção-->
+        <select name="estados">
+            <option name="sp" value="São Paulo"> São Paulo</option>
+            <option name="rj" value="Rio de Janeiro">Rio de Janeiro</option>
+            <option name="pr" value="Parana"> Paraná</option>
+            <option name="sc" value="Santa Catarina">Santa Catarina</option>
+        </select>
+
+        </table>
+
+    </form>
+</body>
+
+</html>
