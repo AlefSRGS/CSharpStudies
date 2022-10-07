@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styleForms.css">
 </head>
 
 <title>Formulario</title>
 
 <body>
     <form action="Formulario/envio.php" method="POST">
-        <table border="0">
+        <table border="1">
 
         <tr>
             <!--linha do nome-->
@@ -49,9 +50,14 @@
         </tr>
 
         <!--linha documentos-->
-        <tr>
-            <td> <label> Documentos: </label> </td>
-            <td> CNPJ: <input type="radio" nome="cnpj" required="required"> - CPF: <input type="radio" name="cpf"> </td>
+        <tr required="required">
+            <label>
+                <td> Documentos: </td>
+                <td> 
+                    <input type="radio" nome="cpf" >CPF
+                    <input type="radio" nome="cpf" > CNPJ 
+                </td>
+            </label>
         </tr>
 
         <!--linha parentes-->
@@ -61,9 +67,11 @@
         </tr>
         
         <!--area de texto-->
-        <tr>
-            <td> <label>Deixe seu feedback: </label> </td>
-            <td> <textarea name="area de texto" cols="30" rows="5" placeholder="Deixe uma mensagem" ></textarea> </td>
+        <tr> 
+            <label>
+                <td> Deixe seu feedback: </td>
+                <td> <textarea name="area de texto" cols="30" rows="5" placeholder="Deixe uma mensagem" ></textarea> </td>
+            </label>
         </tr>
 
         <!--linha botoes-->
@@ -84,5 +92,4 @@
 
     </form>
 </body>
-
 </html>

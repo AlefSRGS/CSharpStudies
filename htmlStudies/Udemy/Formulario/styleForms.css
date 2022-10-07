@@ -1,0 +1,16 @@
+body{
+    background-color: lightgray;
+    background-image: url("https://media.tenor.com/6B2HL5osi7YAAAAd/the-rock-sus-meme-dwayne-johnson.gif");
+}
+table{
+    color: black;
+    background-color: aliceblue;
+    width: 10%;
+    background-image: url("");
+}
+li{
+    text-decoration: none;
+}
+*{
+    text-decoration: none;
+}
