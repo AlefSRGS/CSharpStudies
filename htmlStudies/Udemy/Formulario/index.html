@@ -10,11 +10,11 @@
 
 <body>
     <form action="Formulario/envio.php" method="POST">
-        <table border="1">
+        <table>
 
         <tr>
             <!--linha do nome-->
-        <td width = "10%"> <label> Nome: </td>
+        <td> <label> Nome: </td>
             <!--para setar campos obrigatorios "required = "required"". -->
         <td> <input type="text" name="nome" placeholder="digite seu nome" required="required"></label> </td> 
         </tr>
@@ -54,8 +54,8 @@
             <label>
                 <td> Documentos: </td>
                 <td> 
-                    <input type="radio" nome="cpf" >CPF
-                    <input type="radio" nome="cpf" > CNPJ 
+                    <input type="radio" name="doc" value="CPF"> CPF 
+                    <input type="radio" name="doc" value="CNPJ"> CNPJ 
                 </td>
             </label>
         </tr>
@@ -63,7 +63,7 @@
         <!--linha parentes-->
         <tr>
             <td> <label>Parente:</label></td>
-            <td> Filho: <input type="checkbox" nome ="filho" required="required"> -Tio: <input type="checkbox" nome ="tio" required="required"></td>
+            <td> Filho: <input type="checkbox" nome ="filho" required="required"> Tio: <input type="checkbox" nome ="tio" required="required"></td>
         </tr>
         
         <!--area de texto-->
